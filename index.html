@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practicando css</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <h1>Aprende CSS con Charly</h1>
-    <ul>
-        <li>Inicio</li>
-        <li>Temario</li>
-        <li>Reseñas</li>
-        <li>Contacto</li>
+    <ul id="menu">
+        <li><a href="#">Inicio</a></li>
+        <li>
+            <a href="#">Temario</a>
+            <ul>
+                <li><a href="#">Html</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Reseñas</a></li>
+        <li><a href="#">Contacto</a></li>
     </ul>
     <div id='descripcion'>
-        <p>
+        <h2>Descripcion del curso</h2>
+        <p class="parrafo parrafo1">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi obcaecati nisi, odio, ipsam, est quos impedit aspernatur delectus eligendi tenetur non repellat officiis. Porro explicabo quae sequi ab assumenda, atque nisi exercitationem enim eligendi blanditiis corrupti optio doloribus delectus sed ut ratione recusandae nulla deserunt adipisci ipsa esse. Praesentium quaerat perspiciatis iure rem. Magnam unde sunt praesentium quos asperiores, quo nostrum laborum ipsum architecto esse tenetur est delectus. Sequi non mollitia odio error numquam aperiam nobis. Possimus, deserunt quidem! Inventore voluptatum expedita fuga explicabo vel dolorum? Quisquam officiis perferendis dignissimos nobis dolore cum modi enim laudantium sunt perspiciatis, corrupti voluptatibus.
         </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque quos illo quisquam veritatis exercitationem labore odio officiis expedita ratione, dolore ex saepe commodi iure nesciunt voluptatem sit. Necessitatibus possimus culpa dolore ullam maiores quod perferendis hic nobis, iste consequuntur alias mollitia, ad nihil, nostrum dolorem distinctio? Reprehenderit ab sint nostrum excepturi hic illum repellat quaerat enim possimus omnis laborum explicabo deleniti alias velit consectetur, ducimus voluptates. Possimus, eaque. Ut consectetur atque ex explicabo fuga aperiam at nobis tempore vel, quae tenetur rem sunt dolor ipsam. Fuga nisi cumque, maxime distinctio repellendus esse explicabo error praesentium expedita tempora quam est.
         </p>
-        <p>
+        <p class="parrafo parrafo3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, repellat. Deserunt pariatur dolore dolorum earum explicabo, minima ut ducimus exercitationem, maiores vitae aut velit voluptatem a eaque, sed tempora labore. Cupiditate at a, vitae facere quas velit, ducimus tempore quibusdam eveniet quod magnam voluptates vel sequi asperiores ullam? Doloremque libero impedit maiores blanditiis ipsum laboriosam nisi ab eligendi iure neque dolores ipsam, minus veniam dolor quos eos quaerat id amet ea placeat ut repellendus vitae exercitationem adipisci. Id modi voluptatem voluptatum rerum, dicta temporibus repellendus explicabo tempore in, ducimus quo esse? Consequuntur sapiente qui culpa voluptatibus quos, cumque repellendus. Dolorum!
         </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium iure veritatis, facilis beatae perspiciatis, maxime dolorem nulla ex molestias unde dicta odio aliquid harum nobis consectetur velit quaerat molestiae distinctio aliquam. Sunt dolorem nostrum nam nihil reprehenderit possimus dicta id animi veniam. Sint, esse odio non porro nulla facilis commodi quis earum, sapiente repellendus accusantium aliquam voluptatem ut, error deleniti voluptatibus unde magni facere? Rerum quia tenetur asperiores, incidunt laudantium omnis doloribus esse nesciunt nam necessitatibus tempora consequatur sed veritatis. Repellendus velit atque, sit saepe minima adipisci delectus vero inventore rem ipsam commodi eos! Optio dicta corporis magnam sed?
         </p>
+    </div>
+    <div id="usuario">
+        <form>
+            <label>Nombre</label>
+            <input type="text" name="nombre" />
+            <label>Apellidos</label>
+            <input type="text" name="apellidos" />
+
+            <input type="submit" value="Enviar ahora"/>
+        </form>
     </div>
     <footer>
         Todos los derechos reservados &copy; Carlos
